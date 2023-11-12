@@ -456,12 +456,14 @@ Nav Links
     display: flex;
     justify-content: center;
     align-self: stretch;
+
   }
 
   .nav-center {
     align-self: stretch;
     display: grid;
     grid-template-columns: auto 1fr;
+
   }
 
   .nav-link {
