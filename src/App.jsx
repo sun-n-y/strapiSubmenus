@@ -1,7 +1,16 @@
-import { useGlobalContext } from './context';
+import Hero from './Hero';
+import Navbar from './Navbar';
+import Sidebar from './Sidebar';
+import Submenu from './Submenu';
 
 const App = () => {
-  const { isSidebarOpen } = useGlobalContext();
-  return <h2>Strapi Starter</h2>;
+  return (
+    <main>
+      <Navbar />
+      <Hero />
+      <Sidebar />
+      <Submenu />
+    </main>
+  );
 };
 export default App;
