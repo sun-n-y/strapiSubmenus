@@ -493,7 +493,7 @@ Submenu
     display: block;
     position: fixed;
     left: 50%;
-    top: 6rem;
+    top: 7rem;
     width: var(--fluid-width);
     max-width: var(--max-width);
     background-color: var(--white);
@@ -505,11 +505,13 @@ Submenu
     visibility: hidden;
     opacity: 0;
     transition: transform .3s ease-in-out, opacity .2s ease-in-out;
+    z-index: -1;
   }
 
   .show-submenu {
     visibility: visible;
     opacity: 1;
+    z-index: 10;
     transform: rotate(0deg) translateX(-50%);
   }
 
