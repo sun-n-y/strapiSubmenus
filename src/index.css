@@ -481,19 +481,20 @@ Nav Links
 Submenu
 =============== 
 */
+
 .submenu {
   display: none;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width:992px) {
   .submenu {
     display: block;
     position: fixed;
-    top: 7rem;
     left: 50%;
+    top: 6rem;
     width: var(--fluid-width);
     max-width: var(--max-width);
-    background: var(--white);
+    background-color: var(--white);
     padding: 2rem;
     transform: rotateX(-90deg) translateX(-50%);
     transform-origin: top;
@@ -501,15 +502,13 @@ Submenu
     border-radius: var(--borderRadius);
     visibility: hidden;
     opacity: 0;
-    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
-    z-index: -1;
+    transition: transform .3s ease-in-out, opacity .2s ease-in-out;
   }
 
   .show-submenu {
     visibility: visible;
     opacity: 1;
-    transform: rotateX(0deg) translateX(-50%);
-    z-index: 10;
+    transform: rotate(0deg) translateX(-50%);
   }
 
   .submenu h5 {
@@ -519,7 +518,7 @@ Submenu
 
   .submenu-links {
     display: grid;
-    row-gap: 0.5rem;
+    row-gap: .5rem;
   }
 
   .submenu-links a {
@@ -534,4 +533,5 @@ Submenu
   .submenu-links svg {
     color: var(--grey-500);
   }
+
 }
